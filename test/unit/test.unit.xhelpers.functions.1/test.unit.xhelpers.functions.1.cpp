@@ -230,7 +230,7 @@ static void test_1_1()
 			return pantheios::extras::xhelpers::invoke_nothrow(c_api_function_oom_, r, PANTHEIOS_LITERAL_STRING("c_api_function_oom"), RC_OUTOFMEMORY, RC_EXCEPTION, RC_UNEXPECTED);
 		}
 
-		static int c_api_function_throw_stdx_(int r)
+		static int c_api_function_throw_stdx_(int /* r */)
 		{
 			throw std::runtime_error("abc");
 		}

@@ -57,8 +57,8 @@
 #ifndef PANTHEIOS_DOCUMENTATION_SKIP_SECTION
 # define PANTHEIOS_EXTRAS_XHELPERS_VER_PANTHEIOS_EXTRAS_XHELPERS_HPP_INVOKE_MAJOR       4
 # define PANTHEIOS_EXTRAS_XHELPERS_VER_PANTHEIOS_EXTRAS_XHELPERS_HPP_INVOKE_MINOR       2
-# define PANTHEIOS_EXTRAS_XHELPERS_VER_PANTHEIOS_EXTRAS_XHELPERS_HPP_INVOKE_REVISION    2
-# define PANTHEIOS_EXTRAS_XHELPERS_VER_PANTHEIOS_EXTRAS_XHELPERS_HPP_INVOKE_EDIT        38
+# define PANTHEIOS_EXTRAS_XHELPERS_VER_PANTHEIOS_EXTRAS_XHELPERS_HPP_INVOKE_REVISION    3
+# define PANTHEIOS_EXTRAS_XHELPERS_VER_PANTHEIOS_EXTRAS_XHELPERS_HPP_INVOKE_EDIT        39
 #endif /* !PANTHEIOS_DOCUMENTATION_SKIP_SECTION */
 
 
@@ -2347,6 +2347,8 @@ inline R invoke_nothrow_method(C *pThis, R (C::*pfn)()
 ,   R bad_alloc_code, R unhandled_code, R unexpected_code
 )
 {
+    STLSOFT_SUPPRESS_UNUSED(unexpected_code);
+
 #ifdef STLSOFT_CF_EXCEPTION_SUPPORT
     try
     {
@@ -2417,6 +2419,8 @@ inline R invoke_nothrow_method(C *pThis, R (STLSOFT_STDCALL C::*pfn)()
 ,   R bad_alloc_code, R unhandled_code, R unexpected_code
 )
 {
+    STLSOFT_SUPPRESS_UNUSED(unexpected_code);
+
 #ifdef STLSOFT_CF_EXCEPTION_SUPPORT
     try
     {
@@ -2488,6 +2492,8 @@ inline R invoke_nothrow_method(C *pThis, R (C::*pfn)(A0), A0 a0
 ,   R bad_alloc_code, R unhandled_code, R unexpected_code
 )
 {
+    STLSOFT_SUPPRESS_UNUSED(unexpected_code);
+
 #ifdef STLSOFT_CF_EXCEPTION_SUPPORT
     try
     {
@@ -2559,6 +2565,8 @@ inline R invoke_nothrow_method(C *pThis, R (STLSOFT_STDCALL C::*pfn)(A0), A0 a0
 ,   R bad_alloc_code, R unhandled_code, R unexpected_code
 )
 {
+    STLSOFT_SUPPRESS_UNUSED(unexpected_code);
+
 #ifdef STLSOFT_CF_EXCEPTION_SUPPORT
     try
     {
@@ -2631,6 +2639,8 @@ inline R invoke_nothrow_method(C *pThis, R (C::*pfn)(A0, A1), A0 a0, A1 a1
 ,   R bad_alloc_code, R unhandled_code, R unexpected_code
 )
 {
+    STLSOFT_SUPPRESS_UNUSED(unexpected_code);
+
 #ifdef STLSOFT_CF_EXCEPTION_SUPPORT
     try
     {
@@ -2703,6 +2713,8 @@ inline R invoke_nothrow_method(C *pThis, R (STLSOFT_STDCALL C::*pfn)(A0, A1), A0
 ,   R bad_alloc_code, R unhandled_code, R unexpected_code
 )
 {
+    STLSOFT_SUPPRESS_UNUSED(unexpected_code);
+
 #ifdef STLSOFT_CF_EXCEPTION_SUPPORT
     try
     {
@@ -2776,6 +2788,8 @@ inline R invoke_nothrow_method(C *pThis, R (C::*pfn)(A0, A1, A2), A0 a0, A1 a1, 
 ,   R bad_alloc_code, R unhandled_code, R unexpected_code
 )
 {
+    STLSOFT_SUPPRESS_UNUSED(unexpected_code);
+
 #ifdef STLSOFT_CF_EXCEPTION_SUPPORT
     try
     {
@@ -2849,6 +2863,8 @@ inline R invoke_nothrow_method(C *pThis, R (STLSOFT_STDCALL C::*pfn)(A0, A1, A2)
 ,   R bad_alloc_code, R unhandled_code, R unexpected_code
 )
 {
+    STLSOFT_SUPPRESS_UNUSED(unexpected_code);
+
 #ifdef STLSOFT_CF_EXCEPTION_SUPPORT
     try
     {
@@ -2923,6 +2939,8 @@ inline R invoke_nothrow_method(C *pThis, R (C::*pfn)(A0, A1, A2, A3), A0 a0, A1 
 ,   R bad_alloc_code, R unhandled_code, R unexpected_code
 )
 {
+    STLSOFT_SUPPRESS_UNUSED(unexpected_code);
+
 #ifdef STLSOFT_CF_EXCEPTION_SUPPORT
     try
     {
@@ -2997,6 +3015,8 @@ inline R invoke_nothrow_method(C *pThis, R (STLSOFT_STDCALL C::*pfn)(A0, A1, A2,
 ,   R bad_alloc_code, R unhandled_code, R unexpected_code
 )
 {
+    STLSOFT_SUPPRESS_UNUSED(unexpected_code);
+
 #ifdef STLSOFT_CF_EXCEPTION_SUPPORT
     try
     {
@@ -3072,6 +3092,8 @@ inline R invoke_nothrow_method(C *pThis, R (C::*pfn)(A0, A1, A2, A3, A4), A0 a0,
 ,   R bad_alloc_code, R unhandled_code, R unexpected_code
 )
 {
+    STLSOFT_SUPPRESS_UNUSED(unexpected_code);
+
 #ifdef STLSOFT_CF_EXCEPTION_SUPPORT
     try
     {
@@ -3147,6 +3169,8 @@ inline R invoke_nothrow_method(C *pThis, R (STLSOFT_STDCALL C::*pfn)(A0, A1, A2,
 ,   R bad_alloc_code, R unhandled_code, R unexpected_code
 )
 {
+    STLSOFT_SUPPRESS_UNUSED(unexpected_code);
+
 #ifdef STLSOFT_CF_EXCEPTION_SUPPORT
     try
     {
@@ -3223,6 +3247,8 @@ inline R invoke_nothrow_method(C *pThis, R (C::*pfn)(A0, A1, A2, A3, A4, A5), A0
 ,   R bad_alloc_code, R unhandled_code, R unexpected_code
 )
 {
+    STLSOFT_SUPPRESS_UNUSED(unexpected_code);
+
 #ifdef STLSOFT_CF_EXCEPTION_SUPPORT
     try
     {
@@ -3299,6 +3325,8 @@ inline R invoke_nothrow_method(C *pThis, R (STLSOFT_STDCALL C::*pfn)(A0, A1, A2,
 ,   R bad_alloc_code, R unhandled_code, R unexpected_code
 )
 {
+    STLSOFT_SUPPRESS_UNUSED(unexpected_code);
+
 #ifdef STLSOFT_CF_EXCEPTION_SUPPORT
     try
     {
@@ -3376,6 +3404,8 @@ inline R invoke_nothrow_method(C *pThis, R (C::*pfn)(A0, A1, A2, A3, A4, A5, A6)
 ,   R bad_alloc_code, R unhandled_code, R unexpected_code
 )
 {
+    STLSOFT_SUPPRESS_UNUSED(unexpected_code);
+
 #ifdef STLSOFT_CF_EXCEPTION_SUPPORT
     try
     {
@@ -3453,6 +3483,8 @@ inline R invoke_nothrow_method(C *pThis, R (STLSOFT_STDCALL C::*pfn)(A0, A1, A2,
 ,   R bad_alloc_code, R unhandled_code, R unexpected_code
 )
 {
+    STLSOFT_SUPPRESS_UNUSED(unexpected_code);
+
 #ifdef STLSOFT_CF_EXCEPTION_SUPPORT
     try
     {
@@ -3531,6 +3563,8 @@ inline R invoke_nothrow_method(C *pThis, R (C::*pfn)(A0, A1, A2, A3, A4, A5, A6,
 ,   R bad_alloc_code, R unhandled_code, R unexpected_code
 )
 {
+    STLSOFT_SUPPRESS_UNUSED(unexpected_code);
+
 #ifdef STLSOFT_CF_EXCEPTION_SUPPORT
     try
     {
@@ -3609,6 +3643,8 @@ inline R invoke_nothrow_method(C *pThis, R (STLSOFT_STDCALL C::*pfn)(A0, A1, A2,
 ,   R bad_alloc_code, R unhandled_code, R unexpected_code
 )
 {
+    STLSOFT_SUPPRESS_UNUSED(unexpected_code);
+
 #ifdef STLSOFT_CF_EXCEPTION_SUPPORT
     try
     {
@@ -3688,6 +3724,8 @@ inline R invoke_nothrow_method(C *pThis, R (C::*pfn)(A0, A1, A2, A3, A4, A5, A6,
 ,   R bad_alloc_code, R unhandled_code, R unexpected_code
 )
 {
+    STLSOFT_SUPPRESS_UNUSED(unexpected_code);
+
 #ifdef STLSOFT_CF_EXCEPTION_SUPPORT
     try
     {
@@ -3767,6 +3805,8 @@ inline R invoke_nothrow_method(C *pThis, R (STLSOFT_STDCALL C::*pfn)(A0, A1, A2,
 ,   R bad_alloc_code, R unhandled_code, R unexpected_code
 )
 {
+    STLSOFT_SUPPRESS_UNUSED(unexpected_code);
+
 #ifdef STLSOFT_CF_EXCEPTION_SUPPORT
     try
     {
@@ -3847,6 +3887,8 @@ inline R invoke_nothrow_method(C *pThis, R (C::*pfn)(A0, A1, A2, A3, A4, A5, A6,
 ,   R bad_alloc_code, R unhandled_code, R unexpected_code
 )
 {
+    STLSOFT_SUPPRESS_UNUSED(unexpected_code);
+
 #ifdef STLSOFT_CF_EXCEPTION_SUPPORT
     try
     {
@@ -3927,6 +3969,8 @@ inline R invoke_nothrow_method(C *pThis, R (STLSOFT_STDCALL C::*pfn)(A0, A1, A2,
 ,   R bad_alloc_code, R unhandled_code, R unexpected_code
 )
 {
+    STLSOFT_SUPPRESS_UNUSED(unexpected_code);
+
 #ifdef STLSOFT_CF_EXCEPTION_SUPPORT
     try
     {
