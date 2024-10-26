@@ -4,7 +4,7 @@
  * Purpose:     Definitions of the invoke_nothrow() N-ary function template
  *              suite.
  *
- * Generated:   6th June 2012
+ * Generated:   26th October 2024
  *
  * Status:      This file is auto-generated: DO NOT EDIT!
  *
@@ -44,24 +44,24 @@ inline R invoke_nothrow(R (PANTHEIOS_EXTRAS_HELPERS_CALLCONV_SYMBOL_ *pfn)(), pa
         return hr;
 #ifdef STLSOFT_CF_EXCEPTION_SUPPORT
     }
-    catch(std::bad_alloc&)
+    catch (std::bad_alloc&)
     {
         goto out_of_memory;
     }
     PANTHEIOS_EXTRAS_XHELPERS_COM_EXCEPTION_HELPERS_CUSTOM_CLAUSE_0
-    catch(std::exception& x)
+    catch (std::exception& x)
     {
         PANTHEIOS_EXTRAS_XHELPERS_COM_EXCEPTION_HELPERS_log(PANTHEIOS_EXTRAS_XHELPERS_COM_EXCEPTION_HELPERS_alert, functionName, PANTHEIOS_LITERAL_STRING(": exception: "), x);
 
         return E_FAIL;
     }
 # ifdef __AFX_H__
-    catch(CMemoryException* px)
+    catch (CMemoryException* px)
     {
         px->Delete();
         goto out_of_memory;
     }
-    catch(CException* px)
+    catch (CException* px)
     {
         log(alert, functionName, PANTHEIOS_LITERAL_STRING(": exception: "), *px);
         px->Delete();
@@ -69,11 +69,12 @@ inline R invoke_nothrow(R (PANTHEIOS_EXTRAS_HELPERS_CALLCONV_SYMBOL_ *pfn)(), pa
     }
 # endif /* __AFX_H__*/
     PANTHEIOS_EXTRAS_XHELPERS_COM_EXCEPTION_HELPERS_CUSTOM_CLAUSE_1
-    catch(...)
+    catch (...)
     {
         PANTHEIOS_EXTRAS_XHELPERS_COM_EXCEPTION_HELPERS_log(PANTHEIOS_EXTRAS_XHELPERS_COM_EXCEPTION_HELPERS_emergency, functionName, PANTHEIOS_LITERAL_STRING(": unexpected exception!"));
 
-# if defined(PANTHEIOS_EXTRAS_COM_ABSORB_UNKNOWN_EXCEPTIONS)
+# if 0
+# elif defined(PANTHEIOS_EXTRAS_COM_ABSORB_UNKNOWN_EXCEPTIONS)
         return E_UNEXPECTED;
 # elif defined(PANTHEIOS_EXTRAS_COM_RETHROW_UNKNOWN_EXCEPTIONS)
         throw;
@@ -126,24 +127,24 @@ inline R invoke_nothrow_1(R (PANTHEIOS_EXTRAS_HELPERS_CALLCONV_SYMBOL_ *pfn)(A0)
         return hr;
 #ifdef STLSOFT_CF_EXCEPTION_SUPPORT
     }
-    catch(std::bad_alloc&)
+    catch (std::bad_alloc&)
     {
         goto out_of_memory;
     }
     PANTHEIOS_EXTRAS_XHELPERS_COM_EXCEPTION_HELPERS_CUSTOM_CLAUSE_0
-    catch(std::exception& x)
+    catch (std::exception& x)
     {
         PANTHEIOS_EXTRAS_XHELPERS_COM_EXCEPTION_HELPERS_log(PANTHEIOS_EXTRAS_XHELPERS_COM_EXCEPTION_HELPERS_alert, functionName, PANTHEIOS_LITERAL_STRING(": exception: "), x);
 
         return E_FAIL;
     }
 # ifdef __AFX_H__
-    catch(CMemoryException* px)
+    catch (CMemoryException* px)
     {
         px->Delete();
         goto out_of_memory;
     }
-    catch(CException* px)
+    catch (CException* px)
     {
         log(alert, functionName, PANTHEIOS_LITERAL_STRING(": exception: "), *px);
         px->Delete();
@@ -151,11 +152,12 @@ inline R invoke_nothrow_1(R (PANTHEIOS_EXTRAS_HELPERS_CALLCONV_SYMBOL_ *pfn)(A0)
     }
 # endif /* __AFX_H__*/
     PANTHEIOS_EXTRAS_XHELPERS_COM_EXCEPTION_HELPERS_CUSTOM_CLAUSE_1
-    catch(...)
+    catch (...)
     {
         PANTHEIOS_EXTRAS_XHELPERS_COM_EXCEPTION_HELPERS_log(PANTHEIOS_EXTRAS_XHELPERS_COM_EXCEPTION_HELPERS_emergency, functionName, PANTHEIOS_LITERAL_STRING(": unexpected exception!"));
 
-# if defined(PANTHEIOS_EXTRAS_COM_ABSORB_UNKNOWN_EXCEPTIONS)
+# if 0
+# elif defined(PANTHEIOS_EXTRAS_COM_ABSORB_UNKNOWN_EXCEPTIONS)
         return E_UNEXPECTED;
 # elif defined(PANTHEIOS_EXTRAS_COM_RETHROW_UNKNOWN_EXCEPTIONS)
         throw;
@@ -209,24 +211,24 @@ inline R invoke_nothrow_2(R (PANTHEIOS_EXTRAS_HELPERS_CALLCONV_SYMBOL_ *pfn)(A0,
         return hr;
 #ifdef STLSOFT_CF_EXCEPTION_SUPPORT
     }
-    catch(std::bad_alloc&)
+    catch (std::bad_alloc&)
     {
         goto out_of_memory;
     }
     PANTHEIOS_EXTRAS_XHELPERS_COM_EXCEPTION_HELPERS_CUSTOM_CLAUSE_0
-    catch(std::exception& x)
+    catch (std::exception& x)
     {
         PANTHEIOS_EXTRAS_XHELPERS_COM_EXCEPTION_HELPERS_log(PANTHEIOS_EXTRAS_XHELPERS_COM_EXCEPTION_HELPERS_alert, functionName, PANTHEIOS_LITERAL_STRING(": exception: "), x);
 
         return E_FAIL;
     }
 # ifdef __AFX_H__
-    catch(CMemoryException* px)
+    catch (CMemoryException* px)
     {
         px->Delete();
         goto out_of_memory;
     }
-    catch(CException* px)
+    catch (CException* px)
     {
         log(alert, functionName, PANTHEIOS_LITERAL_STRING(": exception: "), *px);
         px->Delete();
@@ -234,11 +236,12 @@ inline R invoke_nothrow_2(R (PANTHEIOS_EXTRAS_HELPERS_CALLCONV_SYMBOL_ *pfn)(A0,
     }
 # endif /* __AFX_H__*/
     PANTHEIOS_EXTRAS_XHELPERS_COM_EXCEPTION_HELPERS_CUSTOM_CLAUSE_1
-    catch(...)
+    catch (...)
     {
         PANTHEIOS_EXTRAS_XHELPERS_COM_EXCEPTION_HELPERS_log(PANTHEIOS_EXTRAS_XHELPERS_COM_EXCEPTION_HELPERS_emergency, functionName, PANTHEIOS_LITERAL_STRING(": unexpected exception!"));
 
-# if defined(PANTHEIOS_EXTRAS_COM_ABSORB_UNKNOWN_EXCEPTIONS)
+# if 0
+# elif defined(PANTHEIOS_EXTRAS_COM_ABSORB_UNKNOWN_EXCEPTIONS)
         return E_UNEXPECTED;
 # elif defined(PANTHEIOS_EXTRAS_COM_RETHROW_UNKNOWN_EXCEPTIONS)
         throw;
@@ -293,24 +296,24 @@ inline R invoke_nothrow_3(R (PANTHEIOS_EXTRAS_HELPERS_CALLCONV_SYMBOL_ *pfn)(A0,
         return hr;
 #ifdef STLSOFT_CF_EXCEPTION_SUPPORT
     }
-    catch(std::bad_alloc&)
+    catch (std::bad_alloc&)
     {
         goto out_of_memory;
     }
     PANTHEIOS_EXTRAS_XHELPERS_COM_EXCEPTION_HELPERS_CUSTOM_CLAUSE_0
-    catch(std::exception& x)
+    catch (std::exception& x)
     {
         PANTHEIOS_EXTRAS_XHELPERS_COM_EXCEPTION_HELPERS_log(PANTHEIOS_EXTRAS_XHELPERS_COM_EXCEPTION_HELPERS_alert, functionName, PANTHEIOS_LITERAL_STRING(": exception: "), x);
 
         return E_FAIL;
     }
 # ifdef __AFX_H__
-    catch(CMemoryException* px)
+    catch (CMemoryException* px)
     {
         px->Delete();
         goto out_of_memory;
     }
-    catch(CException* px)
+    catch (CException* px)
     {
         log(alert, functionName, PANTHEIOS_LITERAL_STRING(": exception: "), *px);
         px->Delete();
@@ -318,11 +321,12 @@ inline R invoke_nothrow_3(R (PANTHEIOS_EXTRAS_HELPERS_CALLCONV_SYMBOL_ *pfn)(A0,
     }
 # endif /* __AFX_H__*/
     PANTHEIOS_EXTRAS_XHELPERS_COM_EXCEPTION_HELPERS_CUSTOM_CLAUSE_1
-    catch(...)
+    catch (...)
     {
         PANTHEIOS_EXTRAS_XHELPERS_COM_EXCEPTION_HELPERS_log(PANTHEIOS_EXTRAS_XHELPERS_COM_EXCEPTION_HELPERS_emergency, functionName, PANTHEIOS_LITERAL_STRING(": unexpected exception!"));
 
-# if defined(PANTHEIOS_EXTRAS_COM_ABSORB_UNKNOWN_EXCEPTIONS)
+# if 0
+# elif defined(PANTHEIOS_EXTRAS_COM_ABSORB_UNKNOWN_EXCEPTIONS)
         return E_UNEXPECTED;
 # elif defined(PANTHEIOS_EXTRAS_COM_RETHROW_UNKNOWN_EXCEPTIONS)
         throw;

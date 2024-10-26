@@ -1,15 +1,16 @@
 /* /////////////////////////////////////////////////////////////////////////
- * File:        pantheios/extras/xhelpers/internal/common.hpp
+ * File:    pantheios/extras/xhelpers/internal/common.hpp
  *
- * Purpose:     Definition of common features header for the
- *              Pantheios.Extras.xHelpers library for C++ compilation.
+ * Purpose: Definition of common features header for the
+ *          Pantheios.Extras.xHelpers library for C++ compilation.
  *
- * Created:     30th January 2011
- * Updated:     10th September 2015
+ * Created: 30th January 2011
+ * Updated: 26th October 2024
  *
- * Home:        http://www.pantheios.org/
+ * Home:    http://www.pantheios.org/
  *
- * Copyright (c) 2011-2015, Matthew Wilson and Synesis Software
+ * Copyright (c) 2019-2024, Matthew Wilson and Synesis Information Systems
+ * Copyright (c) 2011-2019, Matthew Wilson and Synesis Software
  * All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
@@ -48,33 +49,38 @@
 #ifndef PANTHEIOS_EXTRAS_XHELPERS_INCL_PANTHEIOS_EXTRAS_XHELPERS_INTERNAL_HPP_COMMON
 #define PANTHEIOS_EXTRAS_XHELPERS_INCL_PANTHEIOS_EXTRAS_XHELPERS_INTERNAL_HPP_COMMON
 
+
 /* /////////////////////////////////////////////////////////////////////////
- * Version information
+ * version information
  */
 
 #ifndef PANTHEIOS_DOCUMENTATION_SKIP_SECTION
 # define PANTHEIOS_XHELPERS_EXTRAS_VER_PANTHEIOS_EXTRAS_XHELPERS_INTERNAL_HPP_COMMON_MAJOR      1
 # define PANTHEIOS_XHELPERS_EXTRAS_VER_PANTHEIOS_EXTRAS_XHELPERS_INTERNAL_HPP_COMMON_MINOR      0
 # define PANTHEIOS_XHELPERS_EXTRAS_VER_PANTHEIOS_EXTRAS_XHELPERS_INTERNAL_HPP_COMMON_REVISION   2
-# define PANTHEIOS_XHELPERS_EXTRAS_VER_PANTHEIOS_EXTRAS_XHELPERS_INTERNAL_HPP_COMMON_EDIT       2
+# define PANTHEIOS_XHELPERS_EXTRAS_VER_PANTHEIOS_EXTRAS_XHELPERS_INTERNAL_HPP_COMMON_EDIT       3
 #endif /* !PANTHEIOS_DOCUMENTATION_SKIP_SECTION */
 
+
 /* /////////////////////////////////////////////////////////////////////////
- * Includes
+ * includes
  */
 
 #include <pantheios/extras/xhelpers/internal/common.h>
 
+
 /* /////////////////////////////////////////////////////////////////////////
- * Compatibility checks
+ * compatibility checks
  */
 
-#if defined(PANTHEIOS_NO_NAMESPACE)
+#if 0
+#elif defined(PANTHEIOS_NO_NAMESPACE)
 # error Pantheios.Extras.xHelpers library does not (currently) support no-namespace operation
 #endif /* !PANTHEIOS_NO_NAMESPACE */
 
+
 /* /////////////////////////////////////////////////////////////////////////
- * Namespace
+ * namespace
  */
 
 /** The <strong>Pantheios</strong> root namespace - <code>pantheios</code>.
@@ -103,16 +109,16 @@ namespace xhelpers
 } // namespace extras
 } // namespace pantheios
 
+
 /* /////////////////////////////////////////////////////////////////////////
- * Inclusion
+ * inclusion
  */
 
 #ifdef STLSOFT_CF_PRAGMA_ONCE_SUPPORT
 # pragma once
 #endif /* STLSOFT_CF_PRAGMA_ONCE_SUPPORT */
 
-/* ////////////////////////////////////////////////////////////////////// */
-
 #endif /* !PANTHEIOS_EXTRAS_XHELPERS_INCL_PANTHEIOS_EXTRAS_XHELPERS_INTERNAL_HPP_COMMON */
 
 /* ///////////////////////////// end of file //////////////////////////// */
+

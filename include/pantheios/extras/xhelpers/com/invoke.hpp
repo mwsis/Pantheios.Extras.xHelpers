@@ -1,14 +1,15 @@
 /* /////////////////////////////////////////////////////////////////////////
- * File:        pantheios/extras/xhelpers/com/invoke.hpp
+ * File:    pantheios/extras/xhelpers/com/invoke.hpp
  *
- * Purpose:     Definition of the pantheios::extras::xhelpers::com::invoke overloads.
+ * Purpose: Definition of the pantheios::extras::xhelpers::com::invoke overloads.
  *
- * Created:     1st May 2006
- * Updated:     10th September 2015
+ * Created: 1st May 2006
+ * Updated: 26th October 2024
  *
- * Home:        http://www.pantheios.org/
+ * Home:    http://www.pantheios.org/
  *
- * Copyright (c) 2006-2015, Matthew Wilson and Synesis Software
+ * Copyright (c) 2019-2024, Matthew Wilson and Synesis Information Systems
+ * Copyright (c) 2011-2019, Matthew Wilson and Synesis Software
  * All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
@@ -48,19 +49,21 @@
 #ifndef PANTHEIOS_EXTRAS_XHELPERS_INCL_PANTHEIOS_EXTRAS_XHELPERS_COM_HPP_INVOKE
 #define PANTHEIOS_EXTRAS_XHELPERS_INCL_PANTHEIOS_EXTRAS_XHELPERS_COM_HPP_INVOKE
 
+
 /* /////////////////////////////////////////////////////////////////////////
- * Version information
+ * version information
  */
 
 #ifndef PANTHEIOS_DOCUMENTATION_SKIP_SECTION
 # define PANTHEIOS_EXTRAS_XHELPERS_VER_PANTHEIOS_EXTRAS_XHELPERS_COM_HPP_INVOKE_MAJOR       4
 # define PANTHEIOS_EXTRAS_XHELPERS_VER_PANTHEIOS_EXTRAS_XHELPERS_COM_HPP_INVOKE_MINOR       1
 # define PANTHEIOS_EXTRAS_XHELPERS_VER_PANTHEIOS_EXTRAS_XHELPERS_COM_HPP_INVOKE_REVISION    3
-# define PANTHEIOS_EXTRAS_XHELPERS_VER_PANTHEIOS_EXTRAS_XHELPERS_COM_HPP_INVOKE_EDIT        38
+# define PANTHEIOS_EXTRAS_XHELPERS_VER_PANTHEIOS_EXTRAS_XHELPERS_COM_HPP_INVOKE_EDIT        39
 #endif /* !PANTHEIOS_DOCUMENTATION_SKIP_SECTION */
 
+
 /* /////////////////////////////////////////////////////////////////////////
- * Includes
+ * includes
  */
 
 #include <pantheios/extras/xhelpers/internal/common.hpp>
@@ -93,8 +96,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+
 /* /////////////////////////////////////////////////////////////////////////
- * Namespace
+ * namespace
  */
 
 namespace pantheios
@@ -183,8 +187,9 @@ STDMETHODIMP Record::get_Count(long* pVal)
 namespace com
 {
 
+
 /* /////////////////////////////////////////////////////////////////////////
- * Helper functions
+ * helper functions
  */
 
 #ifndef PANTHEIOS_DOCUMENTATION_SKIP_SECTION
@@ -192,8 +197,8 @@ namespace com
 namespace impl
 {
 }/* namespace impl */
-
 #endif /* !PANTHEIOS_DOCUMENTATION_SKIP_SECTION */
+
 
 /* /////////////////////////////////////////////////////////////////////////
  * API functions
@@ -205,7 +210,7 @@ namespace impl
  *  Win32:
  *   - cdecl (symbol is STLSOFT_CDECL), if STLSOFT_CF_CDECL_SUPPORTED
  *   - stdcall (symbol is STLSOFT_STDCALL), if STLSOFT_CF_STDCALL_SUPPORTED
- * 
+ *
  *  x64:
  *   - fastcall (symbol is STLSOFT_CDECL, which is nothing in x64)
  */
@@ -221,7 +226,8 @@ namespace impl
 # undef PANTHEIOS_EXTRAS_HELPERS_CALLCONV_SYMBOL_
 #endif /* PANTHEIOS_EXTRAS_HELPERS_CALLCONV_SYMBOL_ */
 
-#if defined(PANTHEIOS_DOCUMENTATION_SKIP_SECTION)
+#if 0
+#elif defined(PANTHEIOS_DOCUMENTATION_SKIP_SECTION)
 
  /* default show no calling convention */
 # define PANTHEIOS_EXTRAS_HELPERS_CALLCONV_SYMBOL_
@@ -257,13 +263,14 @@ namespace impl
 # define PANTHEIOS_EXTRAS_HELPERS_CALLCONV_SYMBOL_
 # include "./internal/generated/invoke_nothrow.hpp"
 # include "./internal/generated/invoke_nothrow_method.hpp"
-
 #else
+
 # error This file not currently compatible with architectures other than x86, ia64, and x64. If you require another architecture, please contact the project personnel
 #endif /* architecture */
 
+
 /* /////////////////////////////////////////////////////////////////////////
- * Namespace
+ * namespace
  */
 
 } /* namespace com */
@@ -271,16 +278,16 @@ namespace impl
 } /* namespace extras */
 } /* namespace pantheios */
 
+
 /* /////////////////////////////////////////////////////////////////////////
- * Inclusion
+ * inclusion
  */
 
 #ifdef STLSOFT_CF_PRAGMA_ONCE_SUPPORT
 # pragma once
 #endif /* STLSOFT_CF_PRAGMA_ONCE_SUPPORT */
 
-/* ////////////////////////////////////////////////////////////////////// */
-
 #endif /* !PANTHEIOS_EXTRAS_XHELPERS_INCL_PANTHEIOS_EXTRAS_XHELPERS_COM_HPP_INVOKE */
 
 /* ///////////////////////////// end of file //////////////////////////// */
+

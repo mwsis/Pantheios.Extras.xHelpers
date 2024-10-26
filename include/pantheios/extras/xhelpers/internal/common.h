@@ -1,15 +1,16 @@
 /* /////////////////////////////////////////////////////////////////////////
- * File:        pantheios/extras/xhelpers/internal/common.h
+ * File:    pantheios/extras/xhelpers/internal/common.h
  *
- * Purpose:     Definition of common features header for the
- *              Pantheios.Extras.xHelpers library.
+ * Purpose: Definition of common features header for the
+ *          Pantheios.Extras.xHelpers library.
  *
- * Created:     30th January 2011
- * Updated:     14th February 2017
+ * Created: 30th January 2011
+ * Updated: 26th October 2024
  *
- * Home:        http://www.pantheios.org/
+ * Home:    http://www.pantheios.org/
  *
- * Copyright (c) 2011-2017, Matthew Wilson and Synesis Software
+ * Copyright (c) 2019-2024, Matthew Wilson and Synesis Information Systems
+ * Copyright (c) 2011-2019, Matthew Wilson and Synesis Software
  * All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
@@ -48,31 +49,34 @@
 #ifndef PANTHEIOS_EXTRAS_XHELPERS_INCL_PANTHEIOS_EXTRAS_XHELPERS_INTERNAL_H_COMMON
 #define PANTHEIOS_EXTRAS_XHELPERS_INCL_PANTHEIOS_EXTRAS_XHELPERS_INTERNAL_H_COMMON
 
+
 /* /////////////////////////////////////////////////////////////////////////
- * Version information
+ * version information
  */
 
 #ifndef PANTHEIOS_DOCUMENTATION_SKIP_SECTION
 # define PANTHEIOS_EXTRAS_XHELPERS_VER_PANTHEIOS_EXTRAS_XHELPERS_INTERNAL_H_COMMON_MAJOR    1
 # define PANTHEIOS_EXTRAS_XHELPERS_VER_PANTHEIOS_EXTRAS_XHELPERS_INTERNAL_H_COMMON_MINOR    0
 # define PANTHEIOS_EXTRAS_XHELPERS_VER_PANTHEIOS_EXTRAS_XHELPERS_INTERNAL_H_COMMON_REVISION 7
-# define PANTHEIOS_EXTRAS_XHELPERS_VER_PANTHEIOS_EXTRAS_XHELPERS_INTERNAL_H_COMMON_EDIT     7
+# define PANTHEIOS_EXTRAS_XHELPERS_VER_PANTHEIOS_EXTRAS_XHELPERS_INTERNAL_H_COMMON_EDIT     8
 #endif /* !PANTHEIOS_DOCUMENTATION_SKIP_SECTION */
 
+
 /* /////////////////////////////////////////////////////////////////////////
- * Includes
+ * includes
  */
 
 #include <pantheios/extras/xhelpers/internal/stlsoft.h>
 #include <pantheios/extras/xhelpers/internal/pantheios.h>
 
+
 /* /////////////////////////////////////////////////////////////////////////
- * Compatibility checks
+ * compatibility checks
  */
 
 
 /* /////////////////////////////////////////////////////////////////////////
- * Version information
+ * version information
  */
 
 /** \def PANTHEIOS_EXTRAS_XHELPERS_VER_MAJOR
@@ -104,16 +108,16 @@
 
 #define PANTHEIOS_EXTRAS_XHELPERS_VER                       PANTHEIOS_EXTRAS_XHELPERS_VER_0_1_2
 
+
 /* /////////////////////////////////////////////////////////////////////////
- * Inclusion
+ * inclusion
  */
 
 #ifdef STLSOFT_CF_PRAGMA_ONCE_SUPPORT
 # pragma once
 #endif /* STLSOFT_CF_PRAGMA_ONCE_SUPPORT */
 
-/* ////////////////////////////////////////////////////////////////////// */
-
 #endif /* !PANTHEIOS_EXTRAS_XHELPERS_INCL_PANTHEIOS_EXTRAS_XHELPERS_INTERNAL_H_COMMON */
 
 /* ///////////////////////////// end of file //////////////////////////// */
+

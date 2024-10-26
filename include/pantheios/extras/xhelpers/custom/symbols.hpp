@@ -1,15 +1,16 @@
 /* /////////////////////////////////////////////////////////////////////////
- * File:        pantheios/extras/xhelpers/custom/symbols.hpp
+ * File:    pantheios/extras/xhelpers/custom/symbols.hpp
  *
- * Purpose:     File specifying customisable symbols for
- *              the "Pantheios.Extras.xHelpers" library.
+ * Purpose: File specifying customisable symbols for the
+ *          "Pantheios.Extras.xHelpers" library.
  *
- * Created:     1st May 2006
- * Updated:     10th September 2015
+ * Created: 1st May 2006
+ * Updated: 26th October 2024
  *
- * Home:        http://www.pantheios.org/
+ * Home:    http://www.pantheios.org/
  *
- * Copyright (c) 2006-2015, Matthew Wilson and Synesis Software
+ * Copyright (c) 2019-2024, Matthew Wilson and Synesis Information Systems
+ * Copyright (c) 2006-2019, Matthew Wilson and Synesis Software
  * All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
@@ -48,29 +49,32 @@
 #ifndef PANTHEIOS_EXTRAS_XHELPERS_INCL_PANTHEIOS_EXTRAS_XHELPERS_CUSTOM_HPP_SYMBOLS
 #define PANTHEIOS_EXTRAS_XHELPERS_INCL_PANTHEIOS_EXTRAS_XHELPERS_CUSTOM_HPP_SYMBOLS
 
+
 /* /////////////////////////////////////////////////////////////////////////
- * Version information
+ * version information
  */
 
 #ifndef PANTHEIOS_DOCUMENTATION_SKIP_SECTION
 # define PANTHEIOS_EXTRAS_XHELPERS_VER_PANTHEIOS_EXTRAS_XHELPERS_CUSTOM_HPP_SYMBOLS_MAJOR       4
 # define PANTHEIOS_EXTRAS_XHELPERS_VER_PANTHEIOS_EXTRAS_XHELPERS_CUSTOM_HPP_SYMBOLS_MINOR       1
 # define PANTHEIOS_EXTRAS_XHELPERS_VER_PANTHEIOS_EXTRAS_XHELPERS_CUSTOM_HPP_SYMBOLS_REVISION    3
-# define PANTHEIOS_EXTRAS_XHELPERS_VER_PANTHEIOS_EXTRAS_XHELPERS_CUSTOM_HPP_SYMBOLS_EDIT        33
+# define PANTHEIOS_EXTRAS_XHELPERS_VER_PANTHEIOS_EXTRAS_XHELPERS_CUSTOM_HPP_SYMBOLS_EDIT        34
 #endif /* !PANTHEIOS_DOCUMENTATION_SKIP_SECTION */
 
+
 /* /////////////////////////////////////////////////////////////////////////
- * Includes
+ * includes
  */
 
 #include <pantheios/extras/xhelpers/internal/common.hpp>
 
+
 /* /////////////////////////////////////////////////////////////////////////
- * Feature control
+ * feature control
  */
 
 /* The manner in which Pantheios.Extras.xHelpers reacts to unknown
- * exceptions - via the <code>catch(...) {}</code> clause - is determined by
+ * exceptions - via the <code>catch (...) {}</code> clause - is determined by
  * the following user-definable pre-processor symbols:
  *
  * - PANTHEIOS_EXTRAS_XHELPERS_NO_CATCHALL
@@ -123,7 +127,9 @@
  *      object destructors).
  */
 
-#if defined(PANTHEIOS_EXTRAS_XHELPERS_NO_CATCHALL)
+#if 0
+#elif defined(PANTHEIOS_EXTRAS_XHELPERS_NO_CATCHALL)
+
  /* 1. */
 # ifdef PANTHEIOS_EXTRAS_XHELPERS_USE_CATCHALL
 #  undef PANTHEIOS_EXTRAS_XHELPERS_USE_CATCHALL
@@ -155,17 +161,18 @@
 # else /* ? NDEBUG */
 #  define PANTHEIOS_EXTRAS_XHELPERS_NO_CATCHALL
 # endif /* NDEBUG */
-
 #endif /* PANTHEIOS_EXTRAS_XHELPERS_NO_CATCHALL || PANTHEIOS_EXTRAS_XHELPERS_USE_CATCHALL */
 
 
-#ifdef PANTHEIOS_EXTRAS_XHELPERS_USE_CATCHALL
+#if 0
+#elif defined(PANTHEIOS_EXTRAS_XHELPERS_USE_CATCHALL)
  /* 4. */
 # ifdef PANTHEIOS_EXTRAS_XHELPERS_NO_CATCHALL
 #  error Pre-processor logic is in error
 # endif /* PANTHEIOS_EXTRAS_XHELPERS_NO_CATCHALL */
 
-# if defined(PANTHEIOS_EXTRAS_XHELPERS_CATCHALL_TRANSLATE_UNKNOWN_EXCEPTIONS)
+# if 0
+# elif defined(PANTHEIOS_EXTRAS_XHELPERS_CATCHALL_TRANSLATE_UNKNOWN_EXCEPTIONS)
  /* 4.1 */
 #  if defined(PANTHEIOS_EXTRAS_XHELPERS_CATCHALL_RETHROW_UNKNOWN_EXCEPTIONS)
 #   error Define at most one of PANTHEIOS_EXTRAS_XHELPERS_CATCHALL_TRANSLATE_UNKNOWN_EXCEPTIONS and PANTHEIOS_EXTRAS_XHELPERS_CATCHALL_RETHROW_UNKNOWN_EXCEPTIONS
@@ -214,7 +221,7 @@
  * clauses are employed. If compiling in the presence of MFC, CException*
  * and CMemoryException* are also caught. If you are working with other
  * frameworks whose exception types do not derive from std::exception, you
- * may insert catches for them using the macros 
+ * may insert catches for them using the macros
  * PANTHEIOS_EXTRAS_XHELPERS_EXCEPTION_HELPERS_CUSTOM_CLAUSE_0 and
  * PANTHEIOS_EXTRAS_XHELPERS_EXCEPTION_HELPERS_CUSTOM_CLAUSE_1.
  *
@@ -247,15 +254,15 @@
  */
 
 #ifndef PANTHEIOS_EXTRAS_XHELPERS_EXCEPTION_HELPERS_log
-# define PANTHEIOS_EXTRAS_XHELPERS_EXCEPTION_HELPERS_log         log
+# define PANTHEIOS_EXTRAS_XHELPERS_EXCEPTION_HELPERS_log        log
 #endif /* !PANTHEIOS_EXTRAS_XHELPERS_EXCEPTION_HELPERS_log */
 
 #ifndef PANTHEIOS_EXTRAS_XHELPERS_EXCEPTION_HELPERS_alert
-# define PANTHEIOS_EXTRAS_XHELPERS_EXCEPTION_HELPERS_alert       alert
+# define PANTHEIOS_EXTRAS_XHELPERS_EXCEPTION_HELPERS_alert      alert
 #endif /* !PANTHEIOS_EXTRAS_XHELPERS_EXCEPTION_HELPERS_alert */
 
 #ifndef PANTHEIOS_EXTRAS_XHELPERS_EXCEPTION_HELPERS_emergency
-# define PANTHEIOS_EXTRAS_XHELPERS_EXCEPTION_HELPERS_emergency   emergency
+# define PANTHEIOS_EXTRAS_XHELPERS_EXCEPTION_HELPERS_emergency  emergency
 #endif /* !PANTHEIOS_EXTRAS_XHELPERS_EXCEPTION_HELPERS_emergency */
 
 /** \def PANTHEIOS_EXTRAS_XHELPERS_EXCEPTION_HELPERS_CUSTOM_CLAUSE_0
@@ -278,16 +285,16 @@
 # define PANTHEIOS_EXTRAS_XHELPERS_EXCEPTION_HELPERS_CUSTOM_CLAUSE_1
 #endif /* !PANTHEIOS_EXTRAS_XHELPERS_EXCEPTION_HELPERS_CUSTOM_CLAUSE_1 */
 
+
 /* /////////////////////////////////////////////////////////////////////////
- * Inclusion
+ * inclusion
  */
 
 #ifdef STLSOFT_CF_PRAGMA_ONCE_SUPPORT
 # pragma once
 #endif /* STLSOFT_CF_PRAGMA_ONCE_SUPPORT */
 
-/* ////////////////////////////////////////////////////////////////////// */
-
 #endif /* !PANTHEIOS_EXTRAS_XHELPERS_INCL_PANTHEIOS_EXTRAS_XHELPERS_CUSTOM_HPP_SYMBOLS */
 
 /* ///////////////////////////// end of file //////////////////////////// */
+

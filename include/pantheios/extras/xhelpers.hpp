@@ -1,14 +1,15 @@
 /* /////////////////////////////////////////////////////////////////////////
- * File:        pantheios/extras/xhelpers.hpp
+ * File:    pantheios/extras/xhelpers.hpp
  *
- * Purpose:     Main C++ header for the Pantheios.Extras.xHelpers library.
+ * Purpose: Main C++ header for the Pantheios.Extras.xHelpers library.
  *
- * Created:     30th January 2011
- * Updated:     10th September 2015
+ * Created: 30th January 2011
+ * Updated: 26th October 2024
  *
- * Home:        http://www.pantheios.org/
+ * Home:    http://www.pantheios.org/
  *
- * Copyright (c) 2011-2015, Matthew Wilson and Synesis Software
+ * Copyright (c) 2019-2024, Matthew Wilson and Synesis Information Systems
+ * Copyright (c) 2011-2019, Matthew Wilson and Synesis Software
  * All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
@@ -47,19 +48,21 @@
 #ifndef PANTHEIOS_EXTRAS_XHELPERS_INCL_PANTHEIOS_EXTRAS_HPP_XHELPERS
 #define PANTHEIOS_EXTRAS_XHELPERS_INCL_PANTHEIOS_EXTRAS_HPP_XHELPERS
 
+
 /* /////////////////////////////////////////////////////////////////////////
- * Version information
+ * version information
  */
 
 #ifndef PANTHEIOS_DOCUMENTATION_SKIP_SECTION
 # define PANTHEIOS_XHELPERS_EXTRAS_VER_PANTHEIOS_EXTRAS_HPP_XHELPERS_MAJOR      1
 # define PANTHEIOS_XHELPERS_EXTRAS_VER_PANTHEIOS_EXTRAS_HPP_XHELPERS_MINOR      0
 # define PANTHEIOS_XHELPERS_EXTRAS_VER_PANTHEIOS_EXTRAS_HPP_XHELPERS_REVISION   3
-# define PANTHEIOS_XHELPERS_EXTRAS_VER_PANTHEIOS_EXTRAS_HPP_XHELPERS_EDIT       3
+# define PANTHEIOS_XHELPERS_EXTRAS_VER_PANTHEIOS_EXTRAS_HPP_XHELPERS_EDIT       4
 #endif /* !PANTHEIOS_DOCUMENTATION_SKIP_SECTION */
 
+
 /* /////////////////////////////////////////////////////////////////////////
- * Includes
+ * includes
  */
 
 #include <pantheios/extras/xhelpers/internal/common.hpp>
@@ -72,16 +75,16 @@
 # endif /* PLATFORMSTL_OS_IS_WINDOWS */
 #endif /* !PANTHEIOS_EXTRAS_XHELPERS_NO_COM */
 
+
 /* /////////////////////////////////////////////////////////////////////////
- * Inclusion
+ * inclusion
  */
 
 #ifdef STLSOFT_CF_PRAGMA_ONCE_SUPPORT
 # pragma once
 #endif /* STLSOFT_CF_PRAGMA_ONCE_SUPPORT */
 
-/* ////////////////////////////////////////////////////////////////////// */
-
 #endif /* !PANTHEIOS_EXTRAS_XHELPERS_INCL_PANTHEIOS_EXTRAS_HPP_XHELPERS */
 
 /* ///////////////////////////// end of file //////////////////////////// */
+

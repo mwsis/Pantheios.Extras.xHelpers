@@ -1,15 +1,16 @@
 /* /////////////////////////////////////////////////////////////////////////
- * File:        pantheios/extras/xhelpers/com/custom/symbols.hpp
+ * File:    pantheios/extras/xhelpers/com/custom/symbols.hpp
  *
- * Purpose:     File specifying customisable symbols for use with the COM
- *              overloads in the "Pantheios.Extras.xHelpers" library.
+ * Purpose: File specifying customisable symbols for use with the COM
+ *          overloads in the "Pantheios.Extras.xHelpers" library.
  *
- * Created:     1st May 2006
- * Updated:     10th September 2015
+ * Created: 1st May 2006
+ * Updated: 26th October 2024
  *
- * Home:        http://www.pantheios.org/
+ * Home:    http://www.pantheios.org/
  *
- * Copyright (c) 2006-2015, Matthew Wilson and Synesis Software
+ * Copyright (c) 2019-2024, Matthew Wilson and Synesis Information Systems
+ * Copyright (c) 2011-2019, Matthew Wilson and Synesis Software
  * All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
@@ -49,33 +50,35 @@
 #ifndef PANTHEIOS_EXTRAS_XHELPERS_INCL_PANTHEIOS_EXTRAS_XHELPERS_COM_CUSTOM_HPP_SYMBOLS
 #define PANTHEIOS_EXTRAS_XHELPERS_INCL_PANTHEIOS_EXTRAS_XHELPERS_COM_CUSTOM_HPP_SYMBOLS
 
+
 /* /////////////////////////////////////////////////////////////////////////
- * Version information
+ * version information
  */
 
 #ifndef PANTHEIOS_DOCUMENTATION_SKIP_SECTION
 # define PANTHEIOS_EXTRAS_XHELPERS_VER_PANTHEIOS_EXTRAS_XHELPERS_COM_CUSTOM_HPP_SYMBOLS_MAJOR       4
 # define PANTHEIOS_EXTRAS_XHELPERS_VER_PANTHEIOS_EXTRAS_XHELPERS_COM_CUSTOM_HPP_SYMBOLS_MINOR       0
 # define PANTHEIOS_EXTRAS_XHELPERS_VER_PANTHEIOS_EXTRAS_XHELPERS_COM_CUSTOM_HPP_SYMBOLS_REVISION    4
-# define PANTHEIOS_EXTRAS_XHELPERS_VER_PANTHEIOS_EXTRAS_XHELPERS_COM_CUSTOM_HPP_SYMBOLS_EDIT        34
+# define PANTHEIOS_EXTRAS_XHELPERS_VER_PANTHEIOS_EXTRAS_XHELPERS_COM_CUSTOM_HPP_SYMBOLS_EDIT        35
 #endif /* !PANTHEIOS_DOCUMENTATION_SKIP_SECTION */
 
+
 /* /////////////////////////////////////////////////////////////////////////
- * Includes
+ * includes
  */
 
 #include <pantheios/extras/xhelpers/internal/common.hpp>
 #include <pantheios/extras/xhelpers/custom/symbols.hpp>
 
+
 /* /////////////////////////////////////////////////////////////////////////
- * Feature control
+ * feature control
  */
 
 #ifdef PANTHEIOS_DOCUMENTATION_SKIP_SECTION
 # define PANTHEIOS_EXTRAS_XHELPERS_EXCEPTION_HELPERS_CUSTOM_CLAUSE_0
 # define PANTHEIOS_EXTRAS_XHELPERS_EXCEPTION_HELPERS_CUSTOM_CLAUSE_1
 #endif /* PANTHEIOS_DOCUMENTATION_SKIP_SECTION */
-
 
 
 /** \def PANTHEIOS_EXTRAS_XHELPERS_COM_EXCEPTION_HELPERS_log
@@ -135,16 +138,16 @@
 # define PANTHEIOS_EXTRAS_XHELPERS_COM_EXCEPTION_HELPERS_CUSTOM_CLAUSE_1        PANTHEIOS_EXTRAS_XHELPERS_EXCEPTION_HELPERS_CUSTOM_CLAUSE_1
 #endif /* !PANTHEIOS_EXTRAS_XHELPERS_COM_EXCEPTION_HELPERS_CUSTOM_CLAUSE_1 */
 
+
 /* /////////////////////////////////////////////////////////////////////////
- * Inclusion
+ * inclusion
  */
 
 #ifdef STLSOFT_CF_PRAGMA_ONCE_SUPPORT
 # pragma once
 #endif /* STLSOFT_CF_PRAGMA_ONCE_SUPPORT */
 
-/* ////////////////////////////////////////////////////////////////////// */
-
 #endif /* !PANTHEIOS_EXTRAS_XHELPERS_INCL_PANTHEIOS_EXTRAS_XHELPERS_COM_CUSTOM_HPP_SYMBOLS */
 
 /* ///////////////////////////// end of file //////////////////////////// */
+

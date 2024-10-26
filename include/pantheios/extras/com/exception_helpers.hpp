@@ -1,16 +1,17 @@
 /* /////////////////////////////////////////////////////////////////////////
- * File:        pantheios/extras/com/exception_helpers.hpp (formerly pantheios/util/com/exception_helpers.hpp)
+ * File:    pantheios/extras/com/exception_helpers.hpp (formerly pantheios/util/com/exception_helpers.hpp)
  *
- * Purpose:     Helper functions that invoke a given method and convert any
- *              thrown exceptions (that are derived from std::exception)
- *              into a pantheios log statement and an HRESULT return code.
+ * Purpose: Helper functions that invoke a given method and convert any
+ *          thrown exceptions (that are derived from std::exception) into a
+ *          pantheios log statement and an HRESULT return code.
  *
- * Created:     1st May 2006
- * Updated:     30th January 2011
+ * Created: 1st May 2006
+ * Updated: 26th October 2024
  *
- * Home:        http://www.pantheios.org/
+ * Home:    http://www.pantheios.org/
  *
- * Copyright (c) 2006-2011, Matthew Wilson and Synesis Software
+ * Copyright (c) 2019-2024, Matthew Wilson and Synesis Information Systems
+ * Copyright (c) 2011-2019, Matthew Wilson and Synesis Software
  * All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
@@ -50,25 +51,30 @@
 #ifndef PANTHEIOS_INCL_PANTHEIOS_EXTRAS_COM_HPP_EXCEPTION_HELPERS
 #define PANTHEIOS_INCL_PANTHEIOS_EXTRAS_COM_HPP_EXCEPTION_HELPERS
 
+
 /* /////////////////////////////////////////////////////////////////////////
- * Version information
+ * version information
  */
 
 #ifndef PANTHEIOS_DOCUMENTATION_SKIP_SECTION
 # define PANTHEIOS_VER_PANTHEIOS_EXTRAS_COM_HPP_EXCEPTION_HELPERS_MAJOR     4
 # define PANTHEIOS_VER_PANTHEIOS_EXTRAS_COM_HPP_EXCEPTION_HELPERS_MINOR     0
 # define PANTHEIOS_VER_PANTHEIOS_EXTRAS_COM_HPP_EXCEPTION_HELPERS_REVISION  1
-# define PANTHEIOS_VER_PANTHEIOS_EXTRAS_COM_HPP_EXCEPTION_HELPERS_EDIT      30
+# define PANTHEIOS_VER_PANTHEIOS_EXTRAS_COM_HPP_EXCEPTION_HELPERS_EDIT      31
 #endif /* !PANTHEIOS_DOCUMENTATION_SKIP_SECTION */
 
+
 /* /////////////////////////////////////////////////////////////////////////
- * Includes - 1
+ * includes - 1
  */
 
 #error This file is now obsolete. Instead, include pantheios/extras/xhelpers/com.hpp, and use the components in the pantheios::extras::xhelpers::com namespace
+
 
 /* ////////////////////////////////////////////////////////////////////// */
 
 #endif /* !PANTHEIOS_INCL_PANTHEIOS_EXTRAS_COM_HPP_EXCEPTION_HELPERS */
 
+
 /* ///////////////////////////// end of file //////////////////////////// */
+

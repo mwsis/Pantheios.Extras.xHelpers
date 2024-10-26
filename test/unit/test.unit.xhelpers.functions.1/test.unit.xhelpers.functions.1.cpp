@@ -1,40 +1,33 @@
 /* /////////////////////////////////////////////////////////////////////////
- * File:        test.unit.xhelpers.functions.1.cpp
+ * File:    test.unit.xhelpers.functions.1.cpp
  *
- * Purpose:     Implementation file for the test.unit.xhelpers.functions.1 library.
+ * Purpose: Implementation file for the test.unit.xhelpers.functions.1 library.
  *
- * Created:     24th February 2011
- * Updated:     10th September 2015
- *
- * Status:      Wizard-generated
- *
- * License:     (Licensed under the Synesis Software Open License)
- *
- *              Copyright (c) 2011-2015, Synesis Software Pty Ltd.
- *              All rights reserved.
- *
- *              www:        http://www.synesis.com.au/software
+ * Created: 24th February 2011
+ * Updated: 26th October 2024
  *
  * ////////////////////////////////////////////////////////////////////// */
 
 
 /* /////////////////////////////////////////////////////////////////////////
- * Includes - 1
+ * includes - 1
  */
 #ifdef _AFXDLL
 # include <afx.h>
 #endif
 
+
 /* /////////////////////////////////////////////////////////////////////////
- * Test component header file include(s)
+ * test component header file include(s)
  */
 
 #define PANTHEIOS_EXTRAS_XHELPERS_NO_COM
 
 #include <pantheios/extras/xhelpers.hpp>
 
+
 /* /////////////////////////////////////////////////////////////////////////
- * Includes - 2
+ * includes - 2
  */
 
 /* xTests header files */
@@ -49,14 +42,16 @@
 /* Standard C header files */
 #include <stdlib.h>
 
+
 /* /////////////////////////////////////////////////////////////////////////
- * Identity
+ * identity
  */
 
 PANTHEIOS_EXTERN_C PAN_CHAR_T const PANTHEIOS_FE_PROCESS_IDENTITY[] = PANTHEIOS_LITERAL_STRING("test.unit.xhelpers.functions.1");
 
+
 /* /////////////////////////////////////////////////////////////////////////
- * Forward declarations
+ * forward declarations
  */
 
 namespace
@@ -82,11 +77,11 @@ namespace
 	static void test_1_17(void);
 	static void test_1_18(void);
 	static void test_1_19(void);
-
 } // anonymous namespace
 
+
 /* /////////////////////////////////////////////////////////////////////////
- * Main
+ * main()
  */
 
 int main(int argc, char **argv)
@@ -127,8 +122,9 @@ int main(int argc, char **argv)
 	return retCode;
 }
 
+
 /* /////////////////////////////////////////////////////////////////////////
- * Test function implementations
+ * test function implementations
  */
 
 namespace
@@ -324,7 +320,8 @@ static void test_1_19()
 {
 }
 
-
 } // anonymous namespace
 
+
 /* ///////////////////////////// end of file //////////////////////////// */
+

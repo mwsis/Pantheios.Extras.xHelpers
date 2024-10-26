@@ -1,25 +1,16 @@
 /* /////////////////////////////////////////////////////////////////////////
- * File:        implicit_link.cpp
+ * File:    implicit_link.cpp
  *
- * Purpose:     Implicit link file for the test.unit.xhelpers.functions.1 library.
+ * Purpose: Implicit link file for the test.unit.xhelpers.functions.1 library.
  *
- * Created:     24th February 2011
- * Updated:     10th September 2015
- *
- * Status:      Wizard-generated
- *
- * License:     (Licensed under the Synesis Software Open License)
- *
- *              Copyright (c) 2011-2015, Synesis Software Pty Ltd.
- *              All rights reserved.
- *
- *              www:        http://www.synesis.com.au/software
+ * Created: 24th February 2011
+ * Updated: 26th October 2024
  *
  * ////////////////////////////////////////////////////////////////////// */
 
 
 /* /////////////////////////////////////////////////////////////////////////
- * Includes
+ * includes
  */
 
 /* Pantheios header files */
@@ -30,4 +21,6 @@
 /* xTests header files */
 #include <xtests/implicit_link.h>
 
+
 /* ///////////////////////////// end of file //////////////////////////// */
+
